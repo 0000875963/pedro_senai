@@ -1,0 +1,63 @@
+html, body{
+    background: #000000;
+    margin: 0px; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+h1, h3{
+    text-align: center;
+}
+#calculo_da_lei_de_ohm, #calculo_da_lei_de_ohm_resposta, #other_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.opcoes, .opcao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px;
+}
+input{
+    background: #000000;
+    color: #FFF;
+    border: 1px #FFF solid;
+    border-radius: 10px;
+    height: 3vh;
+    width: 15vw;
+}
+select{
+    background: #000000;
+    color: #FFF;
+    border: 1px #FFF solid;
+    border-radius: 10px;
+    height: 3vh;
+    width: 3vw;
+}
+input:focus, select:focus{
+    outline: none !important;
+}
+input[type="radio"]{
+    width: auto;
+}
+input[type="submit"]{
+    font-size: 20px;
+    height: 4vh;
+    width: 15vw;
+    align-self: center;
+    margin: 30px 0;
+}
+p{
+    margin-bottom: 5px;
+}
+#error_message{
+    text-align: center;
+    font-size: 15px;
+    color: red;
+}

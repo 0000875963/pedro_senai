@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Resistência Elétrica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Cálculo de Resistência Elétrica</h1>
+        <div id="error_message"></div>
+        <form id="calculo_resistencia_eletrica">
+            <p>Escolha o Material</p>
+            <select name="materiais" id="materiais">
+                <option value="0.0278">Alumínio</option>
+                <option value="0.0670">Bronze</option>
+                <option value="0.0173">Cobre</option>
+                <option value="0.500">Constantan</option>
+                <option value="0.210">Chumbo</option>
+                <option value="0.1195">Estanho</option>
+                <option value="0.1221">Ferro</option>
+                <option value="13">Grafite</option>
+                <option value="0.067">Latão</option>
+                <option value="0.480">Manganina</option>
+                <option value="0.960">Mercúrio</option>
+                <option value="1.100">Níquel-cromo</option>
+                <option value="0.0780">Níquel</option>
+                <option value="0.024">Ouro</option>
+                <option value="0.0158">Prata</option>
+                <option value="0.106">Platina</option>
+                <option value="0.050">Tungstênio</option>
+                <option value="0.0615">Zinco</option>
+                <option value="0">Outro</option>
+            </select>
+            <div id="other_menu" style="display:none">
+                <p>Material</p>
+                <input type="text" name="material" id="material" placeholder="Nome do Material">
+                <p>Resistividade</p>
+                <input type="text" name="resistividade" id="resistividade" placeholder="Resistividade em Ωmm2/m" on>
+            </div>
+            <p>Comprimento</p>
+            <input type="text" name="comprimento" id="comprimento" placeholder="Comprimento em m">
+            <p>Seção Transversal</p>
+            <input type="text" name="secao_transversal" id="secao_transversal" placeholder="Seção Transversal em mm²">
+            <p></p>
+            <input type="submit" value="Calcular">
+        </form>
+        <h3 id="calculo_resistencia_eletrica_resposta"></h3>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

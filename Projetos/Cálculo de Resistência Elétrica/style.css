@@ -1,0 +1,48 @@
+html, body{
+    background: #000000;
+    margin: 0px; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    text-align: center;
+}
+#calculo_resistencia_eletrica, #calculo_resistencia_eletrica_resposta, #other_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input, select{
+    background: #000000;
+    color: #FFF;
+    border: 1px #FFF solid;
+    border-radius: 10px;
+    height: 3vh;
+    width: 10vw;
+}
+select{
+    width: 10.6vw;
+}
+input:focus, select:focus{
+    outline: none !important;
+}
+input[type="submit"]{
+    font-size: 20px;
+    height: 4vh;
+    width: 10vw;
+    align-self: center;
+}
+p{
+    margin-bottom: 5px;
+}
+#error_message{
+    text-align: center;
+    font-size: 15px;
+    color: red;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Dec/Bin</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="conversor" onkeydown="keyboardInput();">
+            <div id="tipo_de_conversao">
+                <p class="text">Escolha o tipo de conversão:</p>
+                <div class="option">
+                    <input type="radio" name="bin_dec" id="bin_dec" onclick="TypeOfConversion('bin_dec')">
+                    <label for="bin_dec">Binario Para Decimal</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="dec_bin" id="dec_bin" onclick="TypeOfConversion('dec_bin')">
+                    <label for="dec_bin">Decimal para Binario</label>
+                </div>
+            </div>
+            <div id="numero_a_converter" style="display: none;">
+                <p>Digite o número que quer converter:</p>
+                <input type="text" id="number" oninput="check()">
+                <p class="result" id="result"></p>
+                <button class="converter" onclick="converter()">Converter</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

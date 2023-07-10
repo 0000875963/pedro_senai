@@ -1,0 +1,19 @@
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#conversor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#tipo_de_conversão{
+    display: flex;
+    flex-direction: row;
+}
+.converter{
+    margin: 10px;
+}

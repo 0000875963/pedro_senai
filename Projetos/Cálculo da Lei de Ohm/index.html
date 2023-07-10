@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Lei de Ohm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Cálculo da Lei de Ohm</h1>
+        <div id="error_message"></div>
+        <form id="calculo_da_lei_de_ohm">
+            <p>Escolha a grandeza que deseja obter</p>
+            <div class="opcoes">
+                <div class="opcao">
+                    <input type="radio" name="tensao" id="tensao_opcao">
+                    <label for="tensao_opcao">Tensão</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" name="corrente" id="corrente_opcao">
+                    <label for="corrente_opcao">Corrente</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" name="resistencia" id="resistencia_opcao">
+                    <label for="resistencia_opcao">Resistência</label>
+                </div>
+            </div>
+            <div class="campos">
+                <div class="campo" style="display:none">
+                    <p>Tensão(V)</p>
+                    <input type="text" name="tensao" id="tensao_campo" placeholder="Tensão em Volts">
+                    <select name="unidades_tensao" id="unidades_tensao">
+                        <option value="Mega_6">MV</option>
+                        <option value="Quilo_3">kV</option>
+                        <option value="_0" selected>V</option>
+                        <option value="Mili_-3">mV</option>
+                        <option value="Micro_-6">μV</option>
+                    </select>
+                </div>
+                <div class="campo" style="display:none">
+                    <p>Corrente(A)</p>
+                    <input type="text" name="corrente" id="corrente_campo" placeholder="Corrente em Amperes">
+                    <select name="unidades_corrente" id="unidades_corrente">
+                        <option value="Mega_6">MA</option>
+                        <option value="Quilo_3">kA</option>
+                        <option value="_0" selected>A</option>
+                        <option value="Mili_-3">mA</option>
+                        <option value="Micro_-6">μA</option>
+                        <option value="Nano_-9">nA</option>
+                    </select>
+                </div>
+                <div class="campo" style="display:none">
+                    <p>Resistência(R)</p>
+                    <input type="text" name="resistencia" id="resistencia_campo" placeholder="Resistência em Ohms">
+                    <select name="unidades_resistencia" id="unidades_resistencia">
+                        <option value="Mega_6">MΩ</option>
+                        <option value="Quilo_3">kΩ</option>
+                        <option value="_0" selected>Ω</option>
+                        <option value="Mili_-3">mΩ</option>
+                        <option value="Micro_-6">μΩ</option>
+                    </select>
+                </div>
+            </div>
+            <input id="submit_btn" type="submit" value="Calcular" style="display:none">
+        </form>
+        <h3 id="calculo_da_lei_de_ohm_resposta"></h3>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
