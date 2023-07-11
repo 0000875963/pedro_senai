@@ -29,6 +29,12 @@ campos.forEach((campo) => {
     var select = campo.children[2];
     var input = campo.children[1];
 
+    input.addEventListener("input", () => {
+        if(isNaN(input.value)){
+            input.value = input.value.slice(0, input.value.length-1);
+        }
+    })
+
     select.addEventListener("change", (e) => {
         e.preventDefault();
 
@@ -91,7 +97,8 @@ campos.forEach((campo) => {
                     break;
             }
             data[grandeza] = [select[select.selectedIndex].text, select.value, conversao, grandezaF];
-    }) 
+    });
+    
 });
 
 form.addEventListener("submit", (e) => {
